@@ -8,5 +8,6 @@ pkgs.mkShell {
   # Optional: Set environment variables for IntelliJ
   shellHook = ''
     export JAVA_HOME=${pkgs.openjdk17}/lib/openjdk
+    export PATH=$JAVA_HOME/bin:$PATH
   '';
 }
